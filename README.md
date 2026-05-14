@@ -1,4 +1,4 @@
-# SimpleQuizGame
+# Simple Quiz Game in Godot
 ## Screenshoots
 - First screen game
     <img src="screenshoot/First_Screen.png"/>
