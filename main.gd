@@ -67,7 +67,6 @@ func _init_component():
 	true_answer.text = "0"
 	add_child(true_answer)
 	
-	
 	#icon component false
 	var false_icon = TextureRect.new()
 	false_icon.position = Vector2(150, 30)
@@ -110,11 +109,10 @@ func _generate_question(index):
 	if(index<list_question.size()):
 		label_question.text = list_question[index][0]
 		current_answer = list_question[index][1]
-		print("Current Answer : "+current_answer)
 	else:
 		await get_tree().create_timer(3.0).timeout
 		dialog.title = "Selamat....."
-		dialog.dialog_text = "Anda memenangkan quiz ini"
+		dialog.dialog_text = "Anda telah menyelasikan level ini"
 		dialog.popup_centered()
 		level = level+1
 		_create_question()
